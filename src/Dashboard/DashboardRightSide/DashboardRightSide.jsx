@@ -1,4 +1,6 @@
 import React from 'react';
+import Stat from './Stat/Stat';
+import Charts from './Charts/Charts'
 
 const DashboardRightSide = () => {
     return (
@@ -27,6 +29,11 @@ const DashboardRightSide = () => {
                 </div>
             </div>
             </div>
+
+            {/* Stat */}
+            <Stat></Stat>
+            {/* Charts */}
+            <Charts></Charts>
         </div>
     );
 };
