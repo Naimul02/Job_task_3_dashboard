@@ -1,6 +1,9 @@
 import React from 'react';
 import Stat from './Stat/Stat';
 import Charts from './Charts/Charts'
+import SingleLineChart from './SingleLineChart/SingleLineChart';
+
+
 
 const DashboardRightSide = () => {
     return (
@@ -33,7 +36,15 @@ const DashboardRightSide = () => {
             {/* Stat */}
             <Stat></Stat>
             {/* Charts */}
+            
+            <div className="flex gap-5 items-center">
             <Charts></Charts>
+            <div className="shadow-lg border rounded-lg py-3 px-3 mt-5">
+            <SingleLineChart></SingleLineChart>
+            </div>
+            </div>
+
+            
         </div>
     );
 };
