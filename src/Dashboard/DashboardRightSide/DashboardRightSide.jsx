@@ -37,9 +37,9 @@ const DashboardRightSide = () => {
             <Stat></Stat>
             {/* Charts */}
             
-            <div className="flex flex-col lg:flex-row gap-5 items-center">
+            <div className="flex flex-col lg:flex-row gap-5 items-center mb-8">
             <Charts></Charts>
-            <div className="shadow-lg w-full border rounded-lg py-3 px-3 mt-5">
+            <div className="shadow-lg w-full border rounded-lg py-3 px-3  mt-5">
             <SingleLineChart></SingleLineChart>
             </div>
             </div>

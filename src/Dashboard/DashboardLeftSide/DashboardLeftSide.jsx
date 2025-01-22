@@ -12,8 +12,10 @@ const DashboardLeftSide = () => {
            <div>
             <img src="https://st2.depositphotos.com/5142301/7765/v/450/depositphotos_77650454-stock-illustration-n-letter-with-green-leaves.jpg"className="w-16 h-16 rounded-full" alt="" />
            </div>
-           <div className="space-y-3 mt-4">
-                    <h3 className="text-lg font-semibold text-slate-400">Overview</h3> 
+
+           <h3 className="text-lg font-semibold text-slate-400 block lg:hidden">Overview</h3> 
+           <div className="space-y-3 flex flex-wrap lg:flex-col gap-3 lg:gap-0 mt-2 lg:mt-4">
+                    <h3 className="text-lg hidden lg:block  font-semibold text-slate-400">Overview</h3> 
 
                     <div className="flex items-center gap-3">
                     <AiOutlineAppstore className="text-lg text-slate-500 font-semibold" />
@@ -41,8 +43,9 @@ const DashboardLeftSide = () => {
                         <h4 className="font-semibold text-slate-500">File</h4>
                     </div>
            </div>
-           <div className="space-y-3 mt-4">
-                    <h3 className="text-lg font-semibold text-slate-400 ">Management</h3> 
+           <h3 className="text-lg mt-4 font-semibold text-slate-400 block lg:hidden">Management</h3> 
+           <div className="space-y-3 flex flex-wrap lg:flex-col gap-4 lg:gap-0 mt-2 lg:mt-4">
+                    <h3 className="text-lg hidden lg:block  font-semibold text-slate-400">Management</h3> 
 
                     <div className="flex items-center gap-3">
                     <AiOutlineAppstore className="text-lg text-slate-500 font-semibold" />

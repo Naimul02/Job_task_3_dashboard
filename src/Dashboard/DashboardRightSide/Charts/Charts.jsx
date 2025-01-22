@@ -1,5 +1,5 @@
 import React from "react";
-import { PieChart, Pie, Cell, Label } from "recharts";
+import { PieChart, Pie, Cell, Label, ResponsiveContainer } from "recharts";
 
 const Charts = () => {
   const data = [
@@ -11,9 +11,14 @@ const Charts = () => {
   const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
   return (
-    <div className="shadow-lg mt-6 rounded-lg border w-[400px] h-[300px]">
+    <div className="shadow-lg mt-6 rounded-lg border w-[100%]  h-[300px] lg:w-[400px]">
       <h1 className="text-xl font-bold pl-6 pt-4">Current Download </h1>
-      <PieChart width={400} height={400} className="-mt-[90px]">
+
+      <div className="w-[100%]  h-[300px] lg:w-[400px]">
+
+      <ResponsiveContainer className="w-[100%] h-[100%]">
+
+      <PieChart  className="-mt-[90px]">
         <Pie
           data={data}
           cx={200} 
@@ -36,6 +41,8 @@ const Charts = () => {
           />
         </Pie>
       </PieChart>
+      </ResponsiveContainer>
+      </div>
     </div>
   );
 };
