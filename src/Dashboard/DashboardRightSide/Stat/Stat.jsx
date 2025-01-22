@@ -7,7 +7,7 @@ const Stat = () => {
             
             
             
-        <div className="flex gap-5">
+        <div className="flex flex-col lg:flex-row gap-5">
         <div className="stat  shadow-md border rounded-lg py-8">
     <div className="stat-figure text-primary">
       <img src="https://i.ibb.co.com/tMCxpp9/graph-Chart-removebg-preview.png"className="w-16 h-16" alt="" />

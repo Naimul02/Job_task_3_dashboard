@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis,  Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
   {
@@ -50,11 +50,10 @@ const SingleLineChart = () => {
     return (
         <div>
          
+        <div className="w-[100%] h-[275px]">
+          <ResponsiveContainer width="100%" height="100%">
         <LineChart
-        width={580}
-          height={275}
           data={data}
-          
         >
           <XAxis dataKey="name" />
           <YAxis />
@@ -63,6 +62,9 @@ const SingleLineChart = () => {
           <Line type="monotone" dataKey="pv" stroke="#EFB036" activeDot={{ r: 8 }} />
           <Line type="monotone" dataKey="uv" stroke="#23486A" />
         </LineChart>
+        </ResponsiveContainer>
+        </div>
+        
       
         </div>
     );

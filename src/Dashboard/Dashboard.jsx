@@ -4,13 +4,13 @@ import DashboardRightSide from './DashboardRightSide/DashboardRightSide';
 
 const Dashboard = () => {
     return (
-        <div className="container mx-auto mt-10">
+        <div className="mx-8 mt-10">
             <div className="flex flex-col lg:flex-row gap-6">
 
-                <div className="lg:w-[20%] border">
+                <div className="lg:w-[15%] bg-base-100">
                 <DashboardLeftSide></DashboardLeftSide>
                 </div>
-                <div className="lg:w-[80%]">
+                <div className="lg:w-[85%]">
                 <DashboardRightSide></DashboardRightSide>
                 </div>
             </div>
